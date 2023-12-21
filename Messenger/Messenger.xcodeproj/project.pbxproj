@@ -16,6 +16,11 @@
 		DC53836B2B343C6000AF6009 /* MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53836A2B343C6000AF6009 /* MessengerTests.swift */; };
 		DC5383752B343C6000AF6009 /* MessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383742B343C6000AF6009 /* MessengerUITests.swift */; };
 		DC5383772B343C6000AF6009 /* MessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383762B343C6000AF6009 /* MessengerUITestsLaunchTests.swift */; };
+		DC53838C2B343F8C00AF6009 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53838B2B343F8C00AF6009 /* LoginView.swift */; };
+		DC53838E2B345C9E00AF6009 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53838D2B345C9E00AF6009 /* SignUpView.swift */; };
+		DC5383912B3465EE00AF6009 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383902B3465EE00AF6009 /* InboxView.swift */; };
+		DC5383942B348D1700AF6009 /* OnlineMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383932B348D1700AF6009 /* OnlineMembersView.swift */; };
+		DC5383962B348FC900AF6009 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383952B348FC900AF6009 /* InboxRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		DC5383702B343C6000AF6009 /* MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5383742B343C6000AF6009 /* MessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUITests.swift; sourceTree = "<group>"; };
 		DC5383762B343C6000AF6009 /* MessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC53838B2B343F8C00AF6009 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DC53838D2B345C9E00AF6009 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DC5383902B3465EE00AF6009 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		DC5383932B348D1700AF6009 /* OnlineMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineMembersView.swift; sourceTree = "<group>"; };
+		DC5383952B348FC900AF6009 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,11 @@
 		DC5383532B343C5C00AF6009 /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
-				DC5383542B343C5C00AF6009 /* MessengerApp.swift */,
-				DC5383562B343C5D00AF6009 /* ContentView.swift */,
+				DC5383832B343CCF00AF6009 /* App */,
+				DC5383862B343F1100AF6009 /* Core */,
+				DC5383852B343F0000AF6009 /* Extensions */,
+				DC5383842B343CD700AF6009 /* Model */,
+				DC5383872B343F1800AF6009 /* Service */,
 				DC5383582B343C5F00AF6009 /* Assets.xcassets */,
 				DC53835D2B343C5F00AF6009 /* Persistence.swift */,
 				DC53835F2B343C5F00AF6009 /* Messenger.xcdatamodeld */,
@@ -131,6 +144,88 @@
 				DC5383762B343C6000AF6009 /* MessengerUITestsLaunchTests.swift */,
 			);
 			path = MessengerUITests;
+			sourceTree = "<group>";
+		};
+		DC5383832B343CCF00AF6009 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383542B343C5C00AF6009 /* MessengerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DC5383842B343CD700AF6009 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC5383852B343F0000AF6009 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC5383862B343F1100AF6009 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383922B3467A700AF6009 /* OnlineMembers */,
+				DC5383882B343F4B00AF6009 /* Authentication */,
+				DC53838F2B3465CD00AF6009 /* Inbox */,
+				DC5383892B343F5200AF6009 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DC5383872B343F1800AF6009 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DC5383882B343F4B00AF6009 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DC53838A2B343F7300AF6009 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		DC5383892B343F5200AF6009 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383562B343C5D00AF6009 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DC53838A2B343F7300AF6009 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC53838B2B343F8C00AF6009 /* LoginView.swift */,
+				DC53838D2B345C9E00AF6009 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC53838F2B3465CD00AF6009 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383902B3465EE00AF6009 /* InboxView.swift */,
+				DC5383952B348FC900AF6009 /* InboxRowView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		DC5383922B3467A700AF6009 /* OnlineMembers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383932B348D1700AF6009 /* OnlineMembersView.swift */,
+			);
+			path = OnlineMembers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +361,11 @@
 				DC53835E2B343C5F00AF6009 /* Persistence.swift in Sources */,
 				DC5383572B343C5D00AF6009 /* ContentView.swift in Sources */,
 				DC5383552B343C5D00AF6009 /* MessengerApp.swift in Sources */,
+				DC5383912B3465EE00AF6009 /* InboxView.swift in Sources */,
+				DC5383962B348FC900AF6009 /* InboxRowView.swift in Sources */,
+				DC53838C2B343F8C00AF6009 /* LoginView.swift in Sources */,
+				DC5383942B348D1700AF6009 /* OnlineMembersView.swift in Sources */,
+				DC53838E2B345C9E00AF6009 /* SignUpView.swift in Sources */,
 				DC5383612B343C5F00AF6009 /* Messenger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
