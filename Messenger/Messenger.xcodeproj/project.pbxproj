@@ -21,6 +21,7 @@
 		DC5383912B3465EE00AF6009 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383902B3465EE00AF6009 /* InboxView.swift */; };
 		DC5383942B348D1700AF6009 /* OnlineMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383932B348D1700AF6009 /* OnlineMembersView.swift */; };
 		DC5383962B348FC900AF6009 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383952B348FC900AF6009 /* InboxRowView.swift */; };
+		DC5383992B34942F00AF6009 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383982B34942F00AF6009 /* NewMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		DC5383902B3465EE00AF6009 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		DC5383932B348D1700AF6009 /* OnlineMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineMembersView.swift; sourceTree = "<group>"; };
 		DC5383952B348FC900AF6009 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		DC5383982B34942F00AF6009 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				DC5383922B3467A700AF6009 /* OnlineMembers */,
 				DC5383882B343F4B00AF6009 /* Authentication */,
 				DC53838F2B3465CD00AF6009 /* Inbox */,
+				DC5383972B34940B00AF6009 /* NewMessage */,
 				DC5383892B343F5200AF6009 /* Root */,
 			);
 			path = Core;
@@ -226,6 +229,14 @@
 				DC5383932B348D1700AF6009 /* OnlineMembersView.swift */,
 			);
 			path = OnlineMembers;
+			sourceTree = "<group>";
+		};
+		DC5383972B34940B00AF6009 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383982B34942F00AF6009 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +378,7 @@
 				DC5383942B348D1700AF6009 /* OnlineMembersView.swift in Sources */,
 				DC53838E2B345C9E00AF6009 /* SignUpView.swift in Sources */,
 				DC5383612B343C5F00AF6009 /* Messenger.xcdatamodeld in Sources */,
+				DC5383992B34942F00AF6009 /* NewMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
