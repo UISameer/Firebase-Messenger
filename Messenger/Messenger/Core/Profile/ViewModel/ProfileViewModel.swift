@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import PhotosUI
 
 enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     case darMode
@@ -54,4 +55,25 @@ enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     }
     
     var id: Int { return self.rawValue }
+}
+
+class ProfileViewModel: ObservableObject {
+    
+    @Published var selectedItem: PhotosPickerItem? {
+        
+        didSet {
+            Task {
+                try await loadImage()
+            }
+        }
+    }
+    
+    @Published var profileImage: Image?
+    
+    func loadImage() async throws {
+        guard let item = selectedItem else { return }
+        guard let imageData = try await item.loadTransferable(type: Data.self) else { return }
+        guard let image = UIImage(data: imageData) else { return }
+        self.profileImage = Image(uiImage: image)
+    }
 }
