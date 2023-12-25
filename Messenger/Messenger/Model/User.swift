@@ -5,7 +5,7 @@ struct User: Codable, Identifiable, Hashable {
     var id = UUID().uuidString
     let fullName: String
     let email: String
-    var profileImageUrl: String
+    var profileImageUrl: String?
 }
 
 extension User {

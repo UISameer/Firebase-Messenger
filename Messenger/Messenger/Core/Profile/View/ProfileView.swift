@@ -17,15 +17,7 @@ struct ProfileView: View {
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
                     } else {                        
-                        AsyncImage(url: URL(string: user.profileImageUrl)) { image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
+                        CircularProfileImageView(user: user, size: .xLarge)
                     }
                 }
                 

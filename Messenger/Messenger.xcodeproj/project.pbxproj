@@ -25,6 +25,7 @@
 		DC53839E2B3551F700AF6009 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53839D2B3551F700AF6009 /* ProfileView.swift */; };
 		DC5383A02B35554C00AF6009 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53839F2B35554C00AF6009 /* ProfileViewModel.swift */; };
 		DC90E2402B3958D400B56D8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90E23F2B3958D400B56D8C /* User.swift */; };
+		DC90E2432B39675300B56D8C /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90E2422B39675300B56D8C /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		DC53839D2B3551F700AF6009 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DC53839F2B35554C00AF6009 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		DC90E23F2B3958D400B56D8C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC90E2422B39675300B56D8C /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		DC5383862B343F1100AF6009 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DC90E2412B39670D00B56D8C /* Components */,
 				DC5383882B343F4B00AF6009 /* Authentication */,
 				DC53838F2B3465CD00AF6009 /* Inbox */,
 				DC5383972B34940B00AF6009 /* NewMessage */,
@@ -270,6 +273,14 @@
 				DC53839F2B35554C00AF6009 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC90E2412B39670D00B56D8C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DC90E2422B39675300B56D8C /* CircularProfileImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +420,7 @@
 				DC5383912B3465EE00AF6009 /* InboxView.swift in Sources */,
 				DC5383962B348FC900AF6009 /* InboxRowView.swift in Sources */,
 				DC53838C2B343F8C00AF6009 /* LoginView.swift in Sources */,
+				DC90E2432B39675300B56D8C /* CircularProfileImageView.swift in Sources */,
 				DC5383A02B35554C00AF6009 /* ProfileViewModel.swift in Sources */,
 				DC5383942B348D1700AF6009 /* OnlineMembersView.swift in Sources */,
 				DC53838E2B345C9E00AF6009 /* SignUpView.swift in Sources */,
