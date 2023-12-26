@@ -34,6 +34,9 @@
 		DC90E2512B39E3E300B56D8C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DC90E2502B39E3E300B56D8C /* FirebaseFirestore */; };
 		DC90E2532B39E3E300B56D8C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC90E2522B39E3E300B56D8C /* FirebaseFirestoreSwift */; };
 		DC90E2552B39E3E300B56D8C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DC90E2542B39E3E300B56D8C /* FirebaseStorage */; };
+		DCAA24632B3B461900EF4F88 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA24622B3B461900EF4F88 /* LoginViewModel.swift */; };
+		DCAA24652B3B4AC600EF4F88 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA24642B3B4AC600EF4F88 /* RegistrationViewModel.swift */; };
+		DCAA24672B3B4AFD00EF4F88 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA24662B3B4AFD00EF4F88 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		DC90E2472B39DAFE00B56D8C /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		DC90E2492B39DDDD00B56D8C /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		DC90E24B2B39E23D00B56D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCAA24622B3B461900EF4F88 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DCAA24642B3B4AC600EF4F88 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		DCAA24662B3B4AFD00EF4F88 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,8 @@
 		DC5383882B343F4B00AF6009 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				DCAA24602B3B45F400EF4F88 /* Service */,
+				DCAA24612B3B45F900EF4F88 /* ViewModel */,
 				DC53838A2B343F7300AF6009 /* View */,
 			);
 			path = Authentication;
@@ -309,6 +317,23 @@
 				DC90E2492B39DDDD00B56D8C /* ChatBubble.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		DCAA24602B3B45F400EF4F88 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA24662B3B4AFD00EF4F88 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DCAA24612B3B45F900EF4F88 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA24622B3B461900EF4F88 /* LoginViewModel.swift */,
+				DCAA24642B3B4AC600EF4F88 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,11 +479,14 @@
 				DC90E2402B3958D400B56D8C /* User.swift in Sources */,
 				DC53835E2B343C5F00AF6009 /* Persistence.swift in Sources */,
 				DC90E24A2B39DDDD00B56D8C /* ChatBubble.swift in Sources */,
+				DCAA24652B3B4AC600EF4F88 /* RegistrationViewModel.swift in Sources */,
 				DC5383572B343C5D00AF6009 /* ContentView.swift in Sources */,
 				DC5383552B343C5D00AF6009 /* MessengerApp.swift in Sources */,
 				DC5383912B3465EE00AF6009 /* InboxView.swift in Sources */,
+				DCAA24672B3B4AFD00EF4F88 /* AuthService.swift in Sources */,
 				DC90E2482B39DAFE00B56D8C /* ChatMessageCell.swift in Sources */,
 				DC5383962B348FC900AF6009 /* InboxRowView.swift in Sources */,
+				DCAA24632B3B461900EF4F88 /* LoginViewModel.swift in Sources */,
 				DC53838C2B343F8C00AF6009 /* LoginView.swift in Sources */,
 				DC90E2462B39CAD000B56D8C /* ChatView.swift in Sources */,
 				DC90E2432B39675300B56D8C /* CircularProfileImageView.swift in Sources */,
