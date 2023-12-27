@@ -9,6 +9,13 @@ protocol AuthServiceProvider {
 
 class AuthService: AuthServiceProvider {
     
+    @Published var userSession: FirebaseAuth.User?
+    
+    init() {
+        self.userSession = Auth.auth().currentUser
+        print("DEBUG: User session id is: \(String(describing: userSession?.uid))")
+    }
+    
     func login(withEmail: String, password: String) async throws {
         
         
