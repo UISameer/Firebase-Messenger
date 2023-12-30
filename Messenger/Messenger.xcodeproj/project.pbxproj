@@ -38,6 +38,7 @@
 		DCAA24652B3B4AC600EF4F88 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA24642B3B4AC600EF4F88 /* RegistrationViewModel.swift */; };
 		DCAA24672B3B4AFD00EF4F88 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA24662B3B4AFD00EF4F88 /* AuthService.swift */; };
 		DCAA246B2B3C094200EF4F88 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA246A2B3C094200EF4F88 /* ContentViewModel.swift */; };
+		DCB326F62B40068100325EE9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB326F52B40068100325EE9 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		DCAA24642B3B4AC600EF4F88 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		DCAA24662B3B4AFD00EF4F88 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DCAA246A2B3C094200EF4F88 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DCB326F52B40068100325EE9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				DC5383842B343CD700AF6009 /* Model */,
 				DC5383872B343F1800AF6009 /* Service */,
 				DC5383582B343C5F00AF6009 /* Assets.xcassets */,
+				DC90E24B2B39E23D00B56D8C /* GoogleService-Info.plist */,
 				DC53835D2B343C5F00AF6009 /* Persistence.swift */,
 				DC53835F2B343C5F00AF6009 /* Messenger.xcdatamodeld */,
 				DC53835A2B343C5F00AF6009 /* Preview Content */,
@@ -221,7 +224,7 @@
 		DC5383872B343F1800AF6009 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				DC90E24B2B39E23D00B56D8C /* GoogleService-Info.plist */,
+				DCB326F52B40068100325EE9 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				DCAA24652B3B4AC600EF4F88 /* RegistrationViewModel.swift in Sources */,
 				DC5383572B343C5D00AF6009 /* ContentView.swift in Sources */,
 				DC5383552B343C5D00AF6009 /* MessengerApp.swift in Sources */,
+				DCB326F62B40068100325EE9 /* UserService.swift in Sources */,
 				DC5383912B3465EE00AF6009 /* InboxView.swift in Sources */,
 				DCAA24672B3B4AFD00EF4F88 /* AuthService.swift in Sources */,
 				DC90E2482B39DAFE00B56D8C /* ChatMessageCell.swift in Sources */,
