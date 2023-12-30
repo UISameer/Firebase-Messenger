@@ -23,6 +23,7 @@ struct LoginView: View {
                         .background(Color(.systemGray6))
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
                         .padding(.horizontal, 24)
+                        .textInputAutocapitalization(.never)
                     
                     SecureField("Enter your password", text: $viewModel.password)
                         .font(.subheadline)
@@ -30,6 +31,7 @@ struct LoginView: View {
                         .background(Color(.systemGray6))
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
                         .padding(.horizontal, 24)
+                        .textInputAutocapitalization(.never)
                 }
                 
                 // Forgot password

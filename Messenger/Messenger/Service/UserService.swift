@@ -15,4 +15,9 @@ class UserService: ObservableObject {
         self.currentUser = user
         print("DEBUG: current user in service is \(String(describing: currentUser?.fullName))")
     }
+    
+    static func fetchAllUsers() async throws -> [User] {
+        let snapshot = try await Firestore.firestore().collection("users").getDocuments()
+        return snapshot.documents.compactMap{ try? $0.data(as: User.self)}
+    }
 }
