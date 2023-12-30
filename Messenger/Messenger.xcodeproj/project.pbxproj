@@ -24,6 +24,7 @@
 		DC5383992B34942F00AF6009 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5383982B34942F00AF6009 /* NewMessageView.swift */; };
 		DC53839E2B3551F700AF6009 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53839D2B3551F700AF6009 /* ProfileView.swift */; };
 		DC5383A02B35554C00AF6009 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53839F2B35554C00AF6009 /* ProfileViewModel.swift */; };
+		DC6BD92C2B406F6D00589B67 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6BD92B2B406F6D00589B67 /* InboxViewModel.swift */; };
 		DC90E2402B3958D400B56D8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90E23F2B3958D400B56D8C /* User.swift */; };
 		DC90E2432B39675300B56D8C /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90E2422B39675300B56D8C /* CircularProfileImageView.swift */; };
 		DC90E2462B39CAD000B56D8C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC90E2452B39CAD000B56D8C /* ChatView.swift */; };
@@ -79,6 +80,7 @@
 		DC5383982B34942F00AF6009 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		DC53839D2B3551F700AF6009 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DC53839F2B35554C00AF6009 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DC6BD92B2B406F6D00589B67 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		DC90E23F2B3958D400B56D8C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC90E2422B39675300B56D8C /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		DC90E2452B39CAD000B56D8C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -260,8 +262,8 @@
 		DC53838F2B3465CD00AF6009 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
-				DC5383902B3465EE00AF6009 /* InboxView.swift */,
-				DC5383952B348FC900AF6009 /* InboxRowView.swift */,
+				DC6BD92A2B406F4A00589B67 /* ViewModels */,
+				DC6BD9292B406F4300589B67 /* Views */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -305,6 +307,23 @@
 				DC53839F2B35554C00AF6009 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC6BD9292B406F4300589B67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC5383902B3465EE00AF6009 /* InboxView.swift */,
+				DC5383952B348FC900AF6009 /* InboxRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC6BD92A2B406F4A00589B67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC6BD92B2B406F6D00589B67 /* InboxViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		DC90E2412B39670D00B56D8C /* Components */ = {
@@ -512,6 +531,7 @@
 				DCAA24632B3B461900EF4F88 /* LoginViewModel.swift in Sources */,
 				DC53838C2B343F8C00AF6009 /* LoginView.swift in Sources */,
 				DC90E2462B39CAD000B56D8C /* ChatView.swift in Sources */,
+				DC6BD92C2B406F6D00589B67 /* InboxViewModel.swift in Sources */,
 				DC90E2432B39675300B56D8C /* CircularProfileImageView.swift in Sources */,
 				DC5383A02B35554C00AF6009 /* ProfileViewModel.swift in Sources */,
 				DC5383942B348D1700AF6009 /* OnlineMembersView.swift in Sources */,
